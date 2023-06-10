@@ -426,7 +426,7 @@ let realSubmitBtn = document.getElementById("cta-submit");
 				</div>
 				<div class="elementor-element elementor-element-069df1d elementor-widget__width-auto elementor-widget-mobile__width-initial elementor-widget elementor-widget-html" data-id="069df1d" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<form name="leadform" method="POST" data-netlify="true">
+<!-- 			<form name="leadform" method="POST" data-netlify="true">
 <div class="row g-3">
   <div class="col">
     <input name="first_name" type="text" class="form-control" placeholder="Имя" aria-label="First name">
@@ -436,7 +436,30 @@ let realSubmitBtn = document.getElementById("cta-submit");
   </div>
 </div>
   <button type="submit" class="btn btn-primary d-none" id="cta-submit">Submit</button>
-</form>		</div>
+</form> -->
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+					
+					
+					</div>
 				</div>
 				<div class="elementor-element elementor-element-2b435f2 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="2b435f2" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
